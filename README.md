@@ -58,7 +58,7 @@ The pipelines in ADF handle the movement and transformation of data between ADLS
    - Handles the frequently updated Users dataset.
    - Automatically triggers when a new file is uploaded to `landing-zone-1`.
    - Converts Users data to Parquet format and moves it to `landing-zone-2`.  
-   ![Users Data Pipeline](user_dbricks_pipeline.png)
+   ![Users Data Pipeline](users_dbricks_pipeline.png)
 
 ---
 
