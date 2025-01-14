@@ -28,6 +28,13 @@ Chunking the data:
 - The users data is huge and therfore chunked the data into 10 chunked datasets. Refer `users_chunk_data.ipynb` which has the code to chunk users data, and chunked data can be found at `chunked_data/`
 - The users data is chunked for the ease of processing.
 
+Data Factory pipeline:
+- A pipeline is created in Data Factory by going to the path `Author > Pipelines > Move and transform > Copy data`
+- Created two pipelines, first pipeline is to load buyers, coutries, and sellers csv data from landing-zone-1 container to landing-zone-2 container after converting into parquet file.
+- As limited with the resources, I manually load csv files into landing-zone-1 container, and from their Data Factory pipeline picks the files and automatically load into landing-zone-2
+- buyers, countries, and sellers data is enough to be loaded once as the data mostly don't change. So a different pipeline was created to laod thier data into landing-zone-2 by converting into parquet format.
+- users data is keep on generating, so it's conversion into parquet format and loads into landing-zone-2 is done by other pipeline. A trigger is added to this pipeline when a blob is created in landing-zone-1.
+
 
 
 
