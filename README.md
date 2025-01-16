@@ -6,7 +6,7 @@ This project showcases the creation of an automated data engineering pipeline to
 ---
 
 ## Architecture Diagram
-![Architecture](architecture.png)
+![Architecture](Ecom_Azure_Databricks_Spark_Architecture.png)
 
 ---
 
